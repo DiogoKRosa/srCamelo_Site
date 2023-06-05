@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Sr.Camelô</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div style="overflow-x: hidden;">
+            <div class="fundo">
+                <img src="./imgs/fundo.png">
+            </div>
+        </div>
+        <div class="header" id="header">
+            <div class="logo">
+                <img src="./imgs/logo home.svg">
+            </div>
+            <div class="navbar">
+                <div class="opcao">
+                    <a href="#header">Localize</a>
+                    <a href="#secao">Serviços</a>
+                    <a href="#telas">Telas</a>
+                    <a href="#desenvolvedores">Desenvolvedores</a>
+                </div>
+                <div class="icon"><a></a></div>
+                <div class="dropdown-menu">
+                    <a href="#header">Localize</a>
+                    <a href="#secao">Serviços</a>
+                    <a href="#telas">Telas</a>
+                    <a href="#desenvolvedores">Desenvolvedores</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const icon = document.querySelector('.icon');
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+                
+            icon.addEventListener('click', () => {
+              icon.classList.toggle('active');
+              dropdownMenu.classList.toggle('active');
+    });
+        </script>
+
+        <div class="localize">
+            <div class="text-button">
+                <h1>A UM PASSO DE VOCÊ!</h1>
+                <h4>Encontre vendedores mais próximos de você neste momento.</h4>
+                <button type="button">Localize!</button>
+            </div>
+            <div class="imagem">
+                <a href="https://storyset.com/"><img src="./imgs/Carrinho_de_taco.svg"></a>
+            </div>
+        </div>
+        <div class="seta">
+            <img src="./imgs/nav-icon-esquerdo.svg">
+        </div>
+        <div class="secao" id="secao">
+            <div class="blob" style="background-image: url(./imgs/blob_1.svg);">
+                <a href="https://storyset.com/"><img class="img-blob" src="./imgs/navegacao_2.svg"></a>
+            </div>
+            <div class="texto1">
+                <h1>De qualquer lugar e a qualquer momento!</h2>
+                <h3>O aplicativo Sr. Camelô facilita o encontro de vendedores ambulantes com os interessados em seus produtos. De fácil navegação, rápido e é um serviço totalmente gratuito</h3>
+            </div>
+        </div>
+        <div class="secao">
+            <div class="texto2">
+                <h1>Cadastro e edição de produtos</h2>
+                <h3>Você pode inserir fotos, nome, descrição e valores do seu serviço e/ou produto. Tenha indenpendência digital!
+                    Com o Sr. Camelô tudo se torna mais fácil. Alcance seus clientes habituais e faça novos de forma simples.</h3>
+            </div>
+            <div class="blob" style="background-image: url(./imgs/blob2.svg);">
+                <a href="https://storyset.com/"><img class="img-blob" src="./imgs/cadastro-produto.svg"></a>
+            </div>
+        </div>
+        <div class="secao">
+            <div class="blob" style="background-image: url(./imgs/blob3.svg);">
+                <a href="https://storyset.com/"><img class="img-blob" src="./imgs/tela-loja.svg"></a>
+            </div>
+            <div class="texto1">
+                <h1>Catálogos para cada vendedor mostrar seus produtos</h2>
+                <h3>Visualize com mais informações o produto escolhido, clicando no icone do vendedor. </h3>
+            </div>
+        </div>
+        <div class="carrossel" id="telas">
+        <h1>Telas do Aplicativo</h1>
+            <div class="carousel">
+                <div class="carousel-container">
+                  <div class="carousel-item">
+                    <img src="./imgs/Tela Inicial.png" alt="Imagem 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Escolher-cadastro.png" alt="Imagem 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Cadastro-Consumidor.png" alt="Imagem 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Cadastro-Vendedor.png" alt="Imagem 4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Mapa.png" alt="Imagem 5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Menu-Inicial-Cliente.png" alt="Imagem 6">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Menu-Loja-Cliente.png" alt="Imagem 7">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Pesquisa.png" alt="Imagem 8">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Editar-Conta-Vendedor.png" alt="Imagem 9">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imgs/Editar-Produtos-Vendedor.png" alt="Imagem 10">
+                  </div>
+                </div>
+                <div class="carousel-prev">&#10094;</div>
+                <div class="carousel-next">&#10095;</div>
+            </div>
+          
+            <script>
+                const carousel = document.querySelector('.carousel');
+                const container = carousel.querySelector('.carousel-container');
+                const prevBtn = carousel.querySelector('.carousel-prev');
+                const nextBtn = carousel.querySelector('.carousel-next');
+
+                distancia = 0;
+                prevBtn.addEventListener('click', () => {
+                    distancia = distancia - 1;
+                    if(distancia>=0){
+                        container.style.transform = 'translateX(-'+distancia*100+'%)';    
+                    }else{
+                        distancia = 9;
+                        container.style.transform = 'translateX(-'+distancia*100+'%)';
+                    }
+                    
+                });
+                nextBtn.addEventListener('click', () => {
+                    distancia = distancia + 1;
+                    if(distancia<=9){
+                    container.style.transform = 'translateX(-'+distancia*100+'%)';
+                    }else{
+                        distancia = 0
+                        container.style.transform = 'translateX(-'+distancia*100+'%)';
+                    }
+                });
+                
+            </script>
+        </div>
+
+        <div class="desenvolvedores" id="desenvolvedores">
+            <h1>Desenvolvedores</h1>
+            <div>
+                <div class="dev-card">
+                    <div class="dev-img Diogo"></div>
+                    <h3>Diogo Kawaguchi Rosa</h3>
+                    <div class="link">
+                        <img src="./imgs/icon-github.svg">
+                        <a href="https://github.com/DiogoKRosa">DiogoKRosa</a>
+                    </div>
+                    <div class="link">
+                        <img src="./imgs/icon-linkedin.svg">
+                        <a href="https://www.linkedin.com/in/diogo-kawaguchi-476ba2209/">Diogo Kawaguchi</a>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-img Fabio"></div>
+                    <h3>Fabio Luis Ferreira Grigorim</h3>
+                    <div class="link">
+                        <img src="./imgs/icon-github.svg">
+                        <a href="https://github.com/Fabio-Grigorim">Fabio-Grigorim</a>
+                    </div>
+                    <div class="link">
+                        <img src="./imgs/icon-linkedin.svg">
+                        <a href="https://www.linkedin.com/in/fabio-grigorim-628838245/">Fabio Grigorim</a>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-img Taina"></div>
+                    <h3>Taina Vianna Lima</h3>
+                    <div class="link">
+                        <img src="./imgs/icon-github.svg">
+                        <a href="https://github.com/tainavianna">tainavianna</a>
+                    </div>
+                    <div class="link">
+                        <img src="./imgs/icon-linkedin.svg">
+                        <a href="https://www.linkedin.com/in/taina-vianna-27b528142">Taina Vianna</a>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-img Waldir"></div>
+                    <h3>Waldir Rodrigues de Freitas</h3>
+                    <div class="link">
+                        <img src="./imgs/icon-github.svg">
+                        <a href="https://github.com/Waldir-Freitas">Waldir-Freitas</a>
+                    </div>
+                    <div class="link">
+                        <img src="./imgs/icon-linkedin.svg">
+                        <a href="https://www.linkedin.com/in/waldir-rodrigues-de-freitas-b939b9252/">Waldir R. de Freitas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>HelloW</h3>
+            <h4>Desenvolvido pela Hellow para o projeto srCamelo</h4>
+        </div>
+    </div>
+</body>
+</html>
