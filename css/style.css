@@ -111,6 +111,10 @@ body{
     text-align: center;
     display: inline-block;
     border-radius: 48px;
+    cursor: pointer;
+}
+.text-button>button:hover{
+    background-color: #4d8d0e;
 }
 .imagem{
     margin-top: 7%;
@@ -255,19 +259,19 @@ body{
 }
 
 .Diogo{
-    background-image: url("../imgs/diogo.jpeg");
+    background-image: url("../imgs/diogo.jpg");
     border: #FF6700 3px solid;
 }
 .Fabio{
-    background-image: url("../imgs/fabio.jpeg");
+    background-image: url("../imgs/fabio.jpg");
     border: #5CAC0E 3px solid;  
 }
 .Taina{
-    background-image: url("../imgs/taina.jpeg");
+    background-image: url("../imgs/taina.jpg");
     border: #5CAC0E 3px solid;
 }
-.Waldir{
-    background-image: url("../imgs/waldir.jpeg");
+.Emilly{
+    background-image: url("../imgs/emilly.jpg");
     border: #FF6700 3px solid;
 }
 
